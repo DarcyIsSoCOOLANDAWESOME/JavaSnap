@@ -21,7 +21,15 @@ public class CardGame {
         }
         return newDeck;
     }
-
+    private void makeDeck(){
+        for (Suit suit : suit.values()){
+            int value = 2;
+            for(Symbol symbol : symbol.values()){
+                deckOfCards.add(new Card(suit, symbol, value));
+                value++;
+            }
+        }
+    }
 }
 
 //Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is constructed.
