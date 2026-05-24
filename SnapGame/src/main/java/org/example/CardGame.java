@@ -13,16 +13,16 @@ public class CardGame { //new Class CardGame
     ArrayList<Card> getDeck(){
         ArrayList<Card> newDeck = new ArrayList<>();
         for (Suit suit : Suit.values()){
+            System.out.println(suit.toString());
             for (Symbol symbol : Symbol.values()){
                 newDeck.add(new Card(suit, symbol));
+                System.out.println(symbol.toString());
 
 
             }
         }
         return newDeck;
     }
-
-//    newDeck createDeck = new newDeck();
 
 
 }
