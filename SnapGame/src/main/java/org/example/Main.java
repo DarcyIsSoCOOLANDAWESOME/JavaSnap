@@ -10,6 +10,14 @@ public class Main {
 
         System.out.println(snap.getDeck());
 
+        for(Symbol mySymbol : Symbol.values()){
+            System.out.println(mySymbol);
+        }
+
+
+
+
+
 
     }
 }
