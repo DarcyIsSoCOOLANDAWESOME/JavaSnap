@@ -16,10 +16,10 @@ public enum Symbol {
     king(13, "K");
 
 final int value;
-final String letterValue
+final String letterValue;
 Symbol(int value, String letterValue){
     this.value = value;
-    this.letterValue = letterValue
+    this.letterValue = letterValue;
 }
 }
 

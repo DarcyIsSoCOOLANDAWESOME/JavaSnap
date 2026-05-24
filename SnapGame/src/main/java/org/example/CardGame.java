@@ -22,6 +22,9 @@ public class CardGame { //new Class CardGame
         return newDeck;
     }
 
+//    newDeck createDeck = new newDeck();
+
+
 }
 
 //Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is constructed.
@@ -31,6 +34,7 @@ public class CardGame { //new Class CardGame
 //Has a String suit. Use the unicode characters of heart, club, diamond and spade.
 //Has a String symbol (2,3,4,5,6,7,8,9,10,J,Q,K,A) = card values// Automatic??
 //Has an int value (2,3,4,5,6,7,8,9,10,11,12,13,14) = card values again?
+
 //Has a toString method that describes the class = object printed out
 
 //Tiger tiger = new Tiger();

@@ -6,13 +6,12 @@ public class Main {
     static void main() {
 
         CardGame snap = new CardGame();
+        System.out.println(snap.toString());
 
 
         System.out.println(snap.getDeck());
 
-        for(Symbol mySymbol : Symbol.values()){
-            System.out.println(mySymbol);
-        }
+
 
 
 
