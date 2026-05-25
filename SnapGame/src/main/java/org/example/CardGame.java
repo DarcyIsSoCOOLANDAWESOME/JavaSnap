@@ -21,14 +21,14 @@ public class CardGame { //new Class CardGame
 
             }
         }
+        int index = arr.get(0);
+        System.out.println("The card at the top of the deck is" + index);
         return newDeck;
     }
 
 
 
-//    ArrayList<Card> sortDeckInNumberOrder(){
-//        ArrayList<Card> sortDeck = new Card();
-//    }
+
 
 
 }
