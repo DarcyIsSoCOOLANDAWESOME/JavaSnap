@@ -25,6 +25,12 @@ public class CardGame { //new Class CardGame
     }
 
 
+
+//    ArrayList<Card> sortDeckInNumberOrder(){
+//        ArrayList<Card> sortDeck = new Card();
+//    }
+
+
 }
 
 //Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is constructed.

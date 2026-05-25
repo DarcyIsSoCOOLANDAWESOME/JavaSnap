@@ -9,4 +9,24 @@ public class Card {
         this.suit = suit;
         this.symbol = symbol;
     }
+
+    public Suit getSuit() {
+        return suit;
+    }
+
+    public void setSuit(Suit suit) {
+        this.suit = suit;
+    }
+
+    public Symbol getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(Symbol symbol) {
+        this.symbol = symbol;
+    }
+
+    public String dealCard(){
+        return getSymbol() + " " + getSuit();
+    }
 }
