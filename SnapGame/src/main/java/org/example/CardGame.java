@@ -8,6 +8,8 @@ public class CardGame { //new Class CardGame
 
     public CardGame() {
         this.deckOfCards = getDeck();
+
+        System.out.println("The card at the top of the deck is " + deckOfCards.get(0));
     } //deckof cards equals get deck method
 
     ArrayList<Card> getDeck(){
@@ -21,10 +23,10 @@ public class CardGame { //new Class CardGame
 
             }
         }
-        int index = arr.get(0);
-        System.out.println("The card at the top of the deck is" + index);
         return newDeck;
     }
+
+
 
 
 
