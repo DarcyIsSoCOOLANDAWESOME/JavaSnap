@@ -15,7 +15,7 @@ public class CardGame implements ActionListener { //new Class CardGame
         this.deckOfCards = getDeck();
         shuffleDeck();
         gameTimer = new Timer(10, this);
-        System.out.println("The card at the top of the deck is " + deckOfCards.get(0) + deckOfCards.get(0).getSuit().getSuitSymbol());
+        System.out.println("The card at the top of the deck is " + deckOfCards.get(0) + " of " + deckOfCards.get(0).getSuit().getSuitSymbol());
     } //deckof cards equals get deck method
 
     ArrayList<Card> getDeck(){

@@ -29,6 +29,6 @@ public class Card {
     public int getNumValue(){return symbol.numValue();}
 
     @Override
-    public String toString() {return symbol.numValue() + symbol.letterValue();}
+    public String toString() {return symbol.letterValue();}
 
 }
