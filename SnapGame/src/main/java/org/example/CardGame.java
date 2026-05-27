@@ -34,19 +34,20 @@ public class CardGame { //new Class CardGame
         return deckOfCards.removeFirst();
     }
 
-    public ArrayList<Card>sortDeckIntoSuits(){
-        deckOfCards.sort(
-                (card1, card2) -> {
-                    int suitCompare = card1.getSuit().compareTo(card2.getSuit());
+    public ArrayList<Card> sortDeckIntoSuits(){
+    deckOfCards.sort(
+            (card1, card2) -> {
+                int suitCompare = card1.getSuit().compareTo(card2.getSuit());
 
-                    if(suitCompare == 0){
-                        return card1.getNumValue() - card2.getNumValue();
-                    }
-                    return suitCompare;
+                if(suitCompare == 0){
+                    return card1.getNumValue() - card2.getNumValue();
                 }
-        );
-        return deckOfCards;
-    }
+                return suitCompare;
+            }
+    );
+    return deckOfCards;
+}
+
 
     public void shuffleDeck(){
         Collections.shuffle(deckOfCards);
