@@ -1,16 +1,19 @@
 package org.example;
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
-public class CardGame { //new Class CardGame
+
+public class CardGame implements ActionListener { //new Class CardGame
 
     ArrayList<Card> deckOfCards = new ArrayList<Card>(); //Array List for deck of cards
 
     public CardGame() {
         this.deckOfCards = getDeck();
-
+        gameTimer = new Timer(10, this);
         System.out.println("The card at the top of the deck is " + deckOfCards.get(0));
     } //deckof cards equals get deck method
 
@@ -53,12 +56,13 @@ public class CardGame { //new Class CardGame
         Collections.shuffle(deckOfCards);
     }
 
+    Timer gameTimer;
 
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
 
-
-
-
+    }
 }
 
 //Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is constructed.
