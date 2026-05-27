@@ -15,12 +15,27 @@ public enum Symbol {
     queen(12, "Q"),
     king(13, "K");
 
-final int value;
-final String letterValue;
-Symbol(int value, String letterValue){
-    this.value = value;
+    public String getLetterValue() {
+        return letterValue;
+    }
+
+    public int getNumValue() {
+        return numValue;
+    }
+
+    final int numValue;
+    final String letterValue;
+    Symbol(int numValue, String letterValue){
+    this.numValue = numValue;
     this.letterValue = letterValue;
 }
+
+    public int numValue() {
+        return numValue;
+    }
+    public String letterValue(){
+        return letterValue;
+    }
 }
 
 

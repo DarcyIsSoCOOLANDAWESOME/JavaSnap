@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class CardGame { //new Class CardGame
 
@@ -25,7 +26,30 @@ public class CardGame { //new Class CardGame
         }
         return newDeck;
     }
+    public Card dealCard(){
+        if(deckOfCards.isEmpty()){
+            return null;
+        }
+        return deckOfCards.removeFirst();
+    }
 
+    public ArrayList<Card>sortDeckIntoSuits(){
+        deckOfCards.sort(
+                (card1, card2) -> {
+                    int suitCompare = card1.getSuit().compareTo(card2.getSuit());
+
+                    if(suitCompare == 0){
+                        return card1.getNumValue() - card2.getNumValue();
+                    }
+                    return suitCompare;
+                }
+        );
+        return deckOfCards;
+    }
+
+    public void shuffleDeck(){
+        Collections.shuffle(deckOfCards);
+    }
 
 
 

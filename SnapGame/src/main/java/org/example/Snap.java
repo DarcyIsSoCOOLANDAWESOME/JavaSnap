@@ -1,4 +1,4 @@
-import org.example.CardGame;
+package org.example;
 
 public class Snap extends CardGame {
 }

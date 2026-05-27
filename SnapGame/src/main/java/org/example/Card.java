@@ -26,7 +26,9 @@ public class Card {
         this.symbol = symbol;
     }
 
-    public String dealCard(){
-        return getSymbol() + " " + getSuit();
-    }
+    public int getNumValue(){return symbol.numValue();}
+
+    @Override
+    public String toString() {return symbol.numValue() + symbol.letterValue();}
+
 }
