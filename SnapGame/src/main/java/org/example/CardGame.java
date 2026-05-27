@@ -13,17 +13,18 @@ public class CardGame implements ActionListener { //new Class CardGame
 
     public CardGame() {
         this.deckOfCards = getDeck();
+        shuffleDeck();
         gameTimer = new Timer(10, this);
-        System.out.println("The card at the top of the deck is " + deckOfCards.get(0));
+        System.out.println("The card at the top of the deck is " + deckOfCards.get(0) + deckOfCards.get(0).getSuit().getSuitSymbol());
     } //deckof cards equals get deck method
 
     ArrayList<Card> getDeck(){
         ArrayList<Card> newDeck = new ArrayList<>();
         for (Suit suit : Suit.values()){
-            System.out.println(suit.toString());
+
             for (Symbol symbol : Symbol.values()){
                 newDeck.add(new Card(suit, symbol));
-                System.out.println(symbol.toString());
+
 
 
             }

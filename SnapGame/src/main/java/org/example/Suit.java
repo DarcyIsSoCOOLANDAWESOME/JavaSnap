@@ -5,9 +5,15 @@ public enum Suit {
 
     final String suitSymbol;
 
-    Suit(String suitSymbol1) {
-
-        this.suitSymbol = suitSymbol1;
+    public String getSuitSymbol() {
+        return suitSymbol;
     }
+
+    Suit(String suitSymbol) {
+
+        this.suitSymbol = suitSymbol;
+
+    }
+
 
 }
