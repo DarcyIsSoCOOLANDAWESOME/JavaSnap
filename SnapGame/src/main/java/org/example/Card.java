@@ -6,12 +6,12 @@ public class Card {
  private Symbol symbol;
 
     public Card(Suit suit, Symbol symbol) {
-        this.suit = suit; //Or here?
+        this.suit = suit;
         this.symbol = symbol;
     }
 
     public Suit getSuit() {
-        return suit; //suit symbol needs to be added here
+        return suit;
     }
 
     public void setSuit(Suit suit) {
@@ -29,6 +29,5 @@ public class Card {
     public int getNumValue(){return symbol.numValue();}
 
     @Override
-    public String toString() {return symbol.letterValue();}
-
+    public String toString() {return symbol + " of " + suit.getSuitSymbol();}
 }

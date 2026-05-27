@@ -1,5 +1,6 @@
 import org.example.Card;
 import org.example.CardGame;
+import org.example.Snap;
 import org.example.Suit;
 
 import java.util.Scanner;
@@ -7,15 +8,14 @@ import java.util.Scanner;
 public class Main {
     public static void main() {
 
-        CardGame snap = new CardGame();
-//        CardGame shuffle = new shuffleDeck();
-        Card myCard =  snap.dealCard();
+//        CardGame snap = new CardGame();
+//
+//        Card myCard =  snap.dealCard();
+        Snap StartGame = new Snap();
 
 
 
-//        System.out.println(shuffle);
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
+
 
 
     }
