@@ -11,4 +11,11 @@ public class Players {
         this.playerTwo = playerTwo;
     }
 
+    public String getPlayerTwo() {
+        return playerTwo;
+    }
+
+    public String getPlayerOne() {
+        return playerOne;
+    }
 }
