@@ -8,9 +8,6 @@ import java.util.Scanner;
 public class Main {
     public static void main() {
 
-//        CardGame snap = new CardGame();
-//
-//        Card myCard =  snap.dealCard();
         Snap StartGame = new Snap();
 
 
