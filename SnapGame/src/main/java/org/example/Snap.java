@@ -66,8 +66,5 @@ public class Snap extends CardGame {
         }
 
     }
-    public int checkSnap(){
-        
-    }
 
 }
